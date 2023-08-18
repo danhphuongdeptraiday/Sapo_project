@@ -239,7 +239,7 @@ body {
   .left_product_details
   .product_current_price {
   color: #d3e733;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -316,7 +316,7 @@ body {
   .single_right_product_container
   .single_right_product_container_details
   .product_title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .our_product_container
@@ -326,6 +326,7 @@ body {
   .product_current_price {
   color: #d3e733;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .our_product_container
@@ -379,7 +380,7 @@ body {
 
 .new_container .main_news .left_news .left_news_img {
   width: 100%;
-  height: 60rem;
+  height: 63.3rem;
   overflow: hidden;
 }
 
@@ -437,6 +438,34 @@ body {
 
 .new_container .main_news .right_news .right_top_news .right_top_news_details {
   padding: 2.5rem 3rem;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_top_news
+  .right_top_news_details
+  .news_date {
+  margin-bottom: 1.5rem;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_top_news
+  .right_top_news_details
+  .news_description {
+  margin: 1.5rem 0px;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_top_news
+  .right_top_news_details
+  .read_more_news {
+  display: flex;
+  align-items: center;
 }
 
 .new_container .main_news .right_news .right_bottom_news {
@@ -505,4 +534,54 @@ body {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_bottom_news
+  .right_bottom_news_right {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_bottom_news
+  .right_bottom_news_right
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_bottom_news
+  .right_bottom_news_right
+  .read_more_news {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  border: 1px solid greenyellow;
+  padding: 16px;
+  font-size: 1.2rem;
+}
+
+.new_container
+  .main_news
+  .right_news
+  .right_bottom_news
+  .right_bottom_news_right
+  .read_more_news:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  color: #006837;
 }
