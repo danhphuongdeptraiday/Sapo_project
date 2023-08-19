@@ -10,13 +10,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  /* min-height: 100vh; */
-  /* overflow: hidden; */
-}
-
 /* MENU */
-
 .menu_container {
   width: 100%;
   background-color: white;
@@ -37,7 +31,7 @@ body {
 
 /* logo */
 .logo_container {
-  width: 25rem;
+  width: 17rem;
   display: flex;
   align-items: flex-end;
 }
@@ -60,6 +54,7 @@ body {
 .logo_container .brand_name {
   font-weight: 900;
   padding-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 /*                                          item_container                                      */
@@ -69,15 +64,13 @@ body {
   justify-content: center;
 }
 
-.item_container .item a {
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 1.2rem;
-  color: black;
-}
-
 .item_container .item {
+  display: flex;
   padding: 1.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
 }
 
 .item_container .item:hover {
@@ -109,7 +102,7 @@ body {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   border: rgb(108, 150, 46) solid 0.1rem;
   background-color: rgb(202, 240, 146);
   color: rgb(108, 150, 46);
@@ -135,6 +128,19 @@ body {
   display: flex;
   align-items: flex-end;
   background-color: #dcb884;
+  position: relative;
+}
+
+.banner_container .establish img {
+  position: absolute;
+  width: 30rem;
+  top: 0px;
+  left: -5.8rem;
+}
+
+.banner_container .establish p {
+  font-size: 1.35rem;
+  line-height: 1.5;
 }
 
 .banner_container .banner_img {
@@ -154,6 +160,27 @@ body {
 .our_product_container {
   background-color: #e0ede7;
   padding: 3rem 1rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.our_product_container .lua_top_right_img {
+  width: 30rem;
+  position: absolute;
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+  filter: FlipH;
+  right: -5.4rem;
+  top: 0;
+  opacity: 0.5;
+}
+
+.our_product_container .lua_bottom_left_img {
+  width: 12rem;
+  position: absolute;
+  left: -3.8rem;
+  bottom: -4rem;
+  z-index: 0;
 }
 
 .our_product_container .main_product_container_title {
@@ -169,6 +196,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .our_product_container .product_container .left_product_container {
@@ -584,4 +612,106 @@ body {
   background-color: whitesmoke;
   cursor: pointer;
   color: #006837;
+}
+
+/*                               Tuong lan introduce                   */
+
+.tuong_lan_introduce {
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./Images/ruong_bac_thang1.png");
+  background-color: rgb(177, 210, 146);
+  background-blend-mode: multiply;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tuong_lan_introduce img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+}
+
+.tuong_lan_introduce_container {
+  width: 70rem;
+  padding: 2rem 5rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/*                    FOOTER                                */
+
+.footer {
+  width: 100%;
+  height: 59rem;
+  padding: 3rem 5rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.footer > img {
+  width: 30rem;
+  position: absolute;
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+  filter: FlipH;
+  right: -5.4rem;
+  top: 2.8rem;
+}
+
+.footer .title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-bottom: 0.15rem solid black;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.footer_details {
+  display: flex;
+  width: 100%;
+}
+
+.footer_item .footer_card {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer_item {
+  padding: 1.9rem 0px 0px 0px;
+  width: 33.3%;
+}
+
+.footer_item .footer_card i {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.footer_details_middle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.copy_right {
+  width: 100%;
+  padding: 2rem;
+  font-size: 2.2rem;
+  background-color: #6ad213;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
 }
