@@ -116,6 +116,226 @@ html {
 
 /*              SECTION: PRODUCE_PROCESS                        */
 
+.produce_process {
+  max-width: 144rem;
+  min-height: 60vh;
+  margin: 4.5rem auto 0rem;
+}
+
+.produce_process .produce_process_title {
+  padding: 3rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #63b93e;
+  color: whitesmoke;
+}
+
+.line {
+  display: flex;
+  height: 28rem;
+}
+
+.line .heading {
+  width: 30%;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.line .heading .heading_number {
+  font-size: 12rem;
+  font-weight: bold;
+}
+
+.line .heading .heading_define {
+  font-size: 1.25rem;
+  padding-bottom: 2.8rem;
+  margin-left: 1.2rem;
+  font-weight: 500;
+}
+
+.line .image_heading {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.line .image_heading img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1;
+}
+
+/*                   SECTION: Product details */
+.each_product_page {
+  max-width: 144rem;
+  min-height: 50rem;
+  background-color: #f2e5ce;
+  margin-top: 5rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_product {
+  width: 78rem;
+  min-height: 40rem;
+  background-color: white;
+  padding: 2rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_product .left_side {
+  width: 55%;
+  height: 40rem;
+}
+
+.top_left_side {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.top_left_side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 2;
+}
+
+.bottom_left_side {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  height: 25%;
+  gap: 1rem;
+  padding: 1rem 0rem;
+  grid-template-columns: repeat(4, 23%);
+}
+
+.bottom_left_side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right_side {
+  width: 40%;
+}
+
+.right_side .product_name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.right_side .product_price {
+  font-size: 3.6rem;
+  color: #2e8d4e;
+}
+
+.right_side .product_status {
+  width: 23rem;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 1.9;
+  margin: 2rem 0;
+}
+
+.right_side .product_amount {
+  display: flex;
+}
+
+.count_product {
+  display: flex;
+  min-width: 10rem;
+  height: 3rem;
+}
+
+.amount {
+  margin-right: 2.6rem;
+}
+
+.number {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decrease {
+  padding: 0 0.5rem;
+}
+
+.increase {
+  padding: 0 0.5rem;
+}
+
+.add_buy_button {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.add_to_card_btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 55%;
+  font-size: 1.1rem;
+  border: rgb(108, 150, 46) solid 0.1rem;
+  background-color: rgb(228, 245, 207);
+  color: rgb(93, 138, 26);
+}
+
+.buy_now {
+  width: 40%;
+  background-color: #168039;
+  padding: 1rem;
+  text-align: center;
+}
+
+.extend_product {
+  width: 30rem;
+  min-height: 40rem;
+  overflow: hidden;
+  padding: 1rem 4rem 1rem 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.extend_product .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.item .item_image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.item .item_image img {
+  width: 100%;
+}
+
+.item_description {
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem 2rem;
+  line-height: 1.5;
+}
+
 /*                   SECTION: TUONG LAN INTRODUCE                   */
 .tuong_lan_introduce {
   max-width: 144rem;
