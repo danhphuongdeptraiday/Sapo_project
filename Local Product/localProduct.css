@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*                              MENU                                */
+.menu_container {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130rem;
+  padding: 0rem 6rem 0rem 4rem;
+
+  margin: 0 auto;
+}
+
+/* logo */
+.logo_container {
+  width: 17rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo_container:hover {
+  cursor: pointer;
+}
+
+.logo_container .logo_img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.2rem;
+}
+
+.logo_container .logo_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo_container .brand_name {
+  font-weight: 900;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/*     item_container     */
+.item_container {
+  width: 90rem;
+  display: flex;
+  justify-content: center;
+}
+
+.item_container .item {
+  display: flex;
+  padding: 1.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.item_container .item:hover {
+  background-color: rgb(235, 235, 85);
+  color: rgb(212, 78, 78);
+  cursor: pointer;
+}
+
+.item_container .item a:hover {
+  color: rgb(212, 78, 78);
+}
+
+.item_container .item i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+/* icon_menu */
+.menu_icon_container {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_icon_container .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  border: rgb(108, 150, 46) solid 0.1rem;
+  background-color: rgb(202, 240, 146);
+  color: rgb(108, 150, 46);
+}
+
+.menu_icon_container .icon:hover {
+  cursor: pointer;
+  background-color: rgb(128, 163, 74);
+  color: #b2d397;
+}
+
+/*                   SECTION: SEARCH CONTAINER */
+
+.search_container {
+  max-width: 144rem;
+  min-height: 60rem;
+  background-image: url("../Images/ruong_bac_thang.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5rem auto 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search_container img {
+  width: 100%;
+  height: calc(60rem - 18rem);
+  object-fit: cover;
+}
+
+.searching_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 26rem;
+}
+
+.searching_part h1 {
+  font-size: 3.7rem;
+  text-shadow: #79d529 1px 1px;
+  margin-bottom: 2rem;
+  color: #006837;
+}
+
+.searching_part .search {
+  width: 60%;
+  position: relative;
+}
+
+.searching_part .search input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border-style: none;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+.searching_part .search button {
+  background: linear-gradient(90deg, #00b86e, #64aa14);
+  width: 9rem;
+  font-size: 2.3rem;
+  padding: 1rem 0;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  color: white;
+  transform: translateY(-50%);
+  border-style: none;
+  border-radius: 1rem;
+}
+
+/* SECTION: */
+.list_products_container {
+  display: grid;
+  grid-template-columns: repeat(5, 20rem);
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  background-color: #d9b573;
+}
+
+.product {
+  background-color: white;
+}
+
+.product img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product_details {
+  display: flex;
+  padding: 1rem 1rem 2rem;
+  align-items: center;
+}
+
+.product_details .product_name_price {
+  width: 85%;
+}
+
+.product_details .product_name_price .product_name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.product_details .product_name_price .product_price {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.product_details .product_add_to_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  border: rgb(108, 150, 46) solid 0.1rem;
+  background-color: rgb(202, 240, 146);
+  color: rgb(108, 150, 46);
+}
+
+.product_details .product_add_to_card:hover {
+  cursor: pointer;
+  background-color: rgb(128, 163, 74);
+  color: #b2d397;
+}
+
+/*                   SECTION: TUONG LAN INTRODUCE                   */
+.tuong_lan_introduce {
+  max-width: 144rem;
+  margin: 0 auto;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Images/ruong_bac_thang1.png");
+  background-color: rgb(177, 210, 146);
+  background-blend-mode: multiply;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tuong_lan_introduce img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+}
+
+.tuong_lan_introduce_container {
+  width: 70rem;
+  padding: 2rem 5rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/*                          SECTION: FOOTER                          */
+
+.footer {
+  max-width: 144rem;
+  margin: 0 auto 2rem;
+  height: 59rem;
+  padding: 3rem 5rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.footer > img {
+  width: 30rem;
+  position: absolute;
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+  filter: FlipH;
+  right: -5.4rem;
+  top: 2.8rem;
+}
+
+.footer .title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-bottom: 0.15rem solid black;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.footer_details {
+  display: flex;
+  width: 100%;
+}
+
+.footer_item .footer_card {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer_item {
+  padding: 1.9rem 0px 0px 0px;
+  width: 33.3%;
+}
+
+.footer_item .footer_card i {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.footer_details_middle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.copy_right {
+  width: 100%;
+  padding: 2rem;
+  font-size: 2.2rem;
+  background-color: #6ad213;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+}
