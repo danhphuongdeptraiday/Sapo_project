@@ -33,6 +33,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <!-- Menu -->
@@ -52,11 +54,32 @@
             <div>TRANG CHỦ</div>
             <i class="fa-solid fa-chevron-down"></i>
           </a>
+          <div style="padding: 0" class="item about_us">
+            <a
+              class="about_us_hover_effect"
+              style="
+                display: flex;
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: black;
+                padding: 1.8rem 1.5rem;
+              "
+              onmouseover="this.style.color='rgb(212, 78, 78)'"
+              onmouseout="this.style.color='black'"
+              href="./About Us/about_us.html"
+            >
+              <div>VỀ CHÚNG TÔI</div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
 
-          <a href="./About Us/about_us.html" class="item about_us">
-            <div>VỀ CHÚNG TÔI</div>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
+            <div class="drop_down">
+              <div>Giới thiệu chung</div>
+              <div>Nhà máy Tường Lân</div>
+              <div>Các chứng chỉ</div>
+              <div>Quy trình sản xuất gạo an toàn</div>
+            </div>
+          </div>
 
           <a href="./News/news.html" class="item news">
             <div>TIN TỨC</div>
@@ -105,7 +128,7 @@
       </div>
 
       <div class="banner_img">
-        <img src="./Images/banner.png" alt="" />
+        <img src="./Images/new_rice_banner.png" alt="" />
       </div>
     </section>
 
@@ -129,7 +152,7 @@
         <!-- left_product -->
         <div class="left_product_container">
           <div class="left_product_container_img">
-            <img src="./Images/each_rice_product.jpg" alt="" />
+            <img src="./Images/Gao_ST25.jpg" alt="" />
           </div>
 
           <!-- left_product_details -->
@@ -150,12 +173,12 @@
             </div>
 
             <!-- product_title -->
-            <h2 class="product_title">GẠO BẮC THƠM</h2>
+            <h2 class="product_title">GẠO ST25</h2>
 
             <!-- product_description -->
             <p class="product_description">
-              Gạo Bắc Hương miền Bắc hạt dài, nhỏ, mẩy đều. Nấu cơm cho hương
-              thơm tự nhiên, dẻo, ngọt. Đặc biệt vẫn ngon khi cơm nguội.
+              Gạo ST25 được đặt tên dựa theo nơi nó được nghiên cứu và sản xuất.
+              ST25 chính là Sóc Trăng 25. Đây là loại gạo thơm Sóc Trăng...
             </p>
 
             <!--product_original_price  -->
@@ -175,7 +198,7 @@
           <!-- single_right_product_container -->
           <div class="single_right_product_container">
             <div class="single_right_product_container_img">
-              <img src="./Images/each_rice_product.jpg" alt="" />
+              <img src="./Images/Gao_nep_cai_hoa_vang.jpg" alt="" />
             </div>
 
             <!-- single_right_product_container_details -->
@@ -199,13 +222,13 @@
           <!-- single_right_product_container -->
           <div class="single_right_product_container">
             <div class="single_right_product_container_img">
-              <img src="./Images/each_rice_product.jpg" alt="" />
+              <img src="./Images/Gao_te_hat_trung.jpg" alt="" />
             </div>
 
             <!-- single_right_product_container_details -->
             <div class="single_right_product_container_details">
               <!-- title -->
-              <h3 class="product_title">Gạo Nếp cái hoa vàng</h3>
+              <h3 class="product_title">Gạo Tẻ hạt trung</h3>
 
               <!-- price -->
 
@@ -223,13 +246,13 @@
           <!-- single_right_product_container -->
           <div class="single_right_product_container">
             <div class="single_right_product_container_img">
-              <img src="./Images/each_rice_product.jpg" alt="" />
+              <img src="./Images/Gao_japonica.jpg" alt="" />
             </div>
 
             <!-- single_right_product_container_details -->
             <div class="single_right_product_container_details">
               <!-- title -->
-              <h3 class="product_title">Gạo Nếp cái hoa vàng</h3>
+              <h3 class="product_title">Gạo Japonica</h3>
 
               <!-- price -->
 
@@ -247,13 +270,13 @@
           <!-- single_right_product_container -->
           <div class="single_right_product_container">
             <div class="single_right_product_container_img">
-              <img src="./Images/each_rice_product.jpg" alt="" />
+              <img src="./Images/Gao_jasmine.jpg" alt="" />
             </div>
 
             <!-- single_right_product_container_details -->
             <div class="single_right_product_container_details">
               <!-- title -->
-              <h3 class="product_title">Gạo Nếp cái hoa vàng</h3>
+              <h3 class="product_title">Gạo Jasmine</h3>
 
               <!-- price -->
 
@@ -271,13 +294,13 @@
           <!-- single_right_product_container -->
           <div class="single_right_product_container">
             <div class="single_right_product_container_img">
-              <img src="./Images/each_rice_product.jpg" alt="" />
+              <img src="./Images/Gao_lut.jpg" alt="" />
             </div>
 
             <!-- single_right_product_container_details -->
             <div class="single_right_product_container_details">
               <!-- title -->
-              <h3 class="product_title">Gạo Nếp cái hoa vàng</h3>
+              <h3 class="product_title">Gạo Lứt</h3>
 
               <!-- price -->
 
@@ -294,25 +317,24 @@
 
           <!-- single_right_product_container -->
           <div class="single_right_product_container">
-            <div class="single_right_product_container_img">
-              <img src="./Images/each_rice_product.jpg" alt="" />
+            <div class="four_img_container">
+              <div class="each_four_img">
+                <img src="./Images/Gao_huyet_rong.jpg" alt="" />
+              </div>
+              <div class="each_four_img">
+                <img src="./Images/Gao_3in1.jpg" alt="" />
+              </div>
+              <div class="each_four_img">
+                <img src="./Images/Gao_nep_tim.jpg" alt="" />
+              </div>
+              <div class="each_four_img">
+                <img src="./Images/Gao_504.jpg" alt="" />
+              </div>
             </div>
 
-            <!-- single_right_product_container_details -->
-            <div class="single_right_product_container_details">
-              <!-- title -->
-              <h3 class="product_title">Gạo Nếp cái hoa vàng</h3>
-
-              <!-- price -->
-
-              <!-- button_see_more_description -->
-              <div class="more_specific_product">
-                <h2>Chi Tiết</h2>
-                <i
-                  style="margin-left: 10px"
-                  class="fa-solid fa-arrow-right"
-                ></i>
-              </div>
+            <div class="more_specific_see_more_product">
+              <h2>Xem thêm</h2>
+              <i style="margin-left: 10px" class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
         </div>
@@ -338,10 +360,18 @@
               Thủ tướng Chính phủ vừa phê duyệt Đề án phát triển thương hiệu gạo
               Việt Nam đến 2020,...
             </p>
-            <div class="read_more_news">
-              <h2>Xem thêm</h2>
-              <i style="margin-left: 10px" class="fa-solid fa-arrow-right"></i>
-            </div>
+            <a
+              style="text-decoration: none; color: white"
+              href="https://tuoitre.vn/tin-tuc-sang-29-5-xay-dung-thuong-hieu-gao-viet-nam-dua-ra-thi-truong-gao-dinh-duong-gao-do-20230528222151742.htm"
+            >
+              <div class="read_more_news">
+                <h2>Xem thêm</h2>
+                <i
+                  style="margin-left: 10px"
+                  class="fa-solid fa-arrow-right"
+                ></i>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -363,13 +393,19 @@
                 Thủ tướng Chính phủ vừa phê duyệt Đề án phát triển thương hiệu
                 gạo Việt Nam đến 2020,...
               </p>
-              <div class="read_more_news">
-                <h2>Xem thêm</h2>
-                <i
-                  style="margin-left: 10px"
-                  class="fa-solid fa-arrow-right"
-                ></i>
-              </div>
+
+              <a
+                style="text-decoration: none; color: white"
+                href="https://kinhtedothi.vn/gia-lua-gao-hom-nay-22-8-2023-gia-di-ngang-sau-phien-dieu-chinh-tang.html"
+              >
+                <div class="read_more_news">
+                  <h2>Xem thêm</h2>
+                  <i
+                    style="margin-left: 10px"
+                    class="fa-solid fa-arrow-right"
+                  ></i>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -392,6 +428,28 @@
                   tấn, giảm 19% so với 4,8 triệu tấn trong 9 tháng đầu năm 2014,
                   theo số liệu của Hiệp hội Lương thực...
                 </p>
+                <a
+                  style="text-decoration: none; color: white"
+                  href="https://tuoitre.vn/tin-tuc-sang-29-5-xay-dung-thuong-hieu-gao-viet-nam-dua-ra-thi-truong-gao-dinh-duong-gao-do-20230528222151742.htm"
+                >
+                  <div class="read_more_news">
+                    <h2>Xem thêm</h2>
+                    <i
+                      style="margin-left: 10px"
+                      class="fa-solid fa-arrow-right"
+                    ></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- right_bottom_news_right -->
+            <div class="right_bottom_news_right">
+              <img src="./Images/ruong_bac_thang.png" alt="" />
+              <a
+                style="text-decoration: none; color: white"
+                href="https://dangcongsan.vn/kinh-te/xuat-khau-gao-cua-viet-nam-dot-pha-tai-nhieu-thi-truong-643445.html"
+              >
                 <div class="read_more_news">
                   <h2>Xem thêm</h2>
                   <i
@@ -399,19 +457,7 @@
                     class="fa-solid fa-arrow-right"
                   ></i>
                 </div>
-              </div>
-            </div>
-
-            <!-- right_bottom_news_right -->
-            <div class="right_bottom_news_right">
-              <img src="./Images/ruong_bac_thang.png" alt="" />
-              <div class="read_more_news">
-                <h2>Xem thêm</h2>
-                <i
-                  style="margin-left: 10px"
-                  class="fa-solid fa-arrow-right"
-                ></i>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -430,7 +476,7 @@
 
     <!-- Footer -->
     <section class="footer">
-      <img src="./Images/cây lúa/Asset 39@4x.png" alt="" />
+      <!-- <img src="./Images/cây lúa/Asset 39@4x.png" alt="" /> -->
       <div class="footer_container">
         <div class="title">
           CÔNG TY TNHH CHẾ BIẾN NÔNG SẢN

@@ -34,6 +34,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <script defer src="../app.js"></script>
   </head>
   <body>
     <!-- Section: menu -->
@@ -53,11 +55,32 @@
             <div>TRANG CHỦ</div>
             <i class="fa-solid fa-chevron-down"></i>
           </a>
+          <div style="padding: 0" class="item about_us">
+            <a
+              class="about_us_hover_effect"
+              style="
+                display: flex;
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: black;
+                padding: 1.8rem 1.5rem;
+              "
+              onmouseover="this.style.color='rgb(212, 78, 78)'"
+              onmouseout="this.style.color='black'"
+              href="../About Us/about_us.html"
+            >
+              <div>VỀ CHÚNG TÔI</div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
 
-          <a href="../About Us/about_us.html" class="item about_us">
-            <div>VỀ CHÚNG TÔI</div>
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
+            <div class="drop_down">
+              <div>Giới thiệu chung</div>
+              <div>Nhà máy Tường Lân</div>
+              <div>Các chứng chỉ</div>
+              <div>Quy trình sản xuất gạo an toàn</div>
+            </div>
+          </div>
 
           <a href="../News/news.html" class="item news">
             <div>TIN TỨC</div>
@@ -186,7 +209,7 @@
 
     <!-- Section: Footer -->
     <section class="footer">
-      <img src="../Images/cây lúa/Asset 39@4x.png" alt="" />
+      <!-- <img src="./Images/cây lúa/Asset 39@4x.png" alt="" /> -->
       <div class="footer_container">
         <div class="title">
           CÔNG TY TNHH CHẾ BIẾN NÔNG SẢN

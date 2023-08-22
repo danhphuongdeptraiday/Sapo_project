@@ -71,6 +71,7 @@ html {
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
+  position: relative;
 }
 
 .item_container .item:hover {
@@ -81,6 +82,33 @@ html {
 
 .item_container .item a:hover {
   color: rgb(212, 78, 78);
+}
+
+.drop_down {
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.drop_down div {
+  text-align: start;
+  padding: 1.2rem;
+  color: #2b4e28;
+}
+
+.drop_down div:hover {
+  background-color: rgb(235, 235, 85);
+  color: rgb(212, 78, 78);
+  cursor: pointer;
+}
+
+.item .about_us .a:hover ~ .drop_down {
+  background-color: red;
 }
 
 .item_container .item i {
@@ -227,6 +255,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .news_container .news_container_card {
@@ -293,6 +322,7 @@ html {
 /*                            SECTION: FOOTER                               */
 .footer {
   max-width: 144rem;
+  margin: 2rem auto 0rem;
   height: 59rem;
   padding: 3rem 5rem;
   position: relative;
@@ -300,10 +330,22 @@ html {
   justify-content: flex-end;
   overflow: hidden;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-  font-weight: 500;
+  color: white;
+}
+
+.footer::before {
+  content: "";
+  background-image: url("../Images/banner_footer.png");
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* opacity: 0.2; */
+  background-color: rgb(202, 200, 200);
+  background-blend-mode: multiply;
 }
 
 .footer > img {
@@ -319,14 +361,16 @@ html {
 .footer .title {
   font-weight: 500;
   font-size: 1.8rem;
-  border-bottom: 0.15rem solid black;
+  border-bottom: 0.15rem solid white;
   margin-bottom: 3rem;
   padding-bottom: 1rem;
+  position: relative;
 }
 
 .footer_details {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .footer_item .footer_card {
@@ -346,8 +390,8 @@ html {
 }
 
 .footer_details_middle {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .copy_right {
