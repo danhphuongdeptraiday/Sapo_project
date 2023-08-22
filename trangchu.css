@@ -627,7 +627,7 @@ html {
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../Images/ruong_bac_thang1.png");
+  background-image: url("./Images/ruong_bac_thang1.png");
   background-color: rgb(177, 210, 146);
   background-blend-mode: multiply;
   object-fit: cover;
