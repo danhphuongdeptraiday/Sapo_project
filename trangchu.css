@@ -507,7 +507,7 @@ html {
 }
 
 .new_container .main_news .left_news .left_news_details {
-  padding: 2rem;
+  padding: 1.8rem;
 }
 
 .new_container .main_news .left_news .left_news_details .news_date {
@@ -533,6 +533,9 @@ html {
 /* right news */
 .new_container .main_news .right_news {
   width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .new_container .main_news .right_news .right_top_news {
