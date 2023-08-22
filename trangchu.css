@@ -118,9 +118,19 @@ html {
 .banner_container {
   max-width: 144rem;
   display: flex;
-  height: 95vh;
+  height: 90vh;
   margin: 5rem auto 0rem;
   overflow: hidden;
+}
+
+@media screen and (min-width: 144rem) {
+  .banner_container {
+    height: 68rem;
+  }
+
+  .banner_container .establish img {
+    width: 65rem;
+  }
 }
 
 .banner_container .establish {
