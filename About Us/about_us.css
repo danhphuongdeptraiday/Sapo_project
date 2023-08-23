@@ -206,6 +206,8 @@ html {
 /*                          SECTION: VERSION                         */
 .vision_container {
   color: #3a5a4d;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .vision_heading {
