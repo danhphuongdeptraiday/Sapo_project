@@ -3,27 +3,27 @@ window.addEventListener("load", init);
 var list_product_vie = [
   {
     product_name: "Gạo Nếp cái hoa vàng",
-    product_image: "./Images/Gao_nep_cai_hoa_vang.jpg",
+    product_img: "../Images/Gao_nep_cai_hoa_vang.jpg",
   },
 
   {
     product_name: "Gạo Tẻ hạt trung",
-    product_image: "./Images/Gao_te_hat_trung.jpg",
+    product_img: "../Images/Gao_te_hat_trung.jpg",
   },
 
   {
     product_name: "Gạo ST25",
-    product_image: "./Images/Gao_ST25.jpg",
+    product_img: "../Images/Gao_ST25.jpg",
   },
 
   {
     product_name: "Gạo Jasmine",
-    product_image: "./Images/Gao_jasmine.jpg",
+    product_img: "../Images/Gao_jasmine.jpg",
   },
 
   {
     product_name: "Gạo Lứt",
-    product_image: "./Images/Gao_lut.jpg",
+    product_img: "../Images/Gao_lut.jpg",
   },
 ];
 
@@ -73,7 +73,7 @@ function init() {
     temp_HTML_Render_Product += `
     <div productId="${i}" class="single_right_product_container">
     <div class="single_right_product_container_img">
-    <img src="${list_product_vie[i].product_image}" alt="" />
+    <img src="${list_product_vie[i].product_img}" alt="" />
     </div>
     
     <!-- single_right_product_container_details -->
@@ -133,6 +133,8 @@ function getEle() {
     this.event.target.parentElement.parentElement.parentElement.getAttribute(
       "productid"
     );
+
+  console.log(id_of_product);
 
   console.log(list_product_vie[id_of_product]);
   localStorage.setItem(
