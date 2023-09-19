@@ -242,6 +242,11 @@ html {
   margin-bottom: 0.8rem;
 }
 
+.product_details .product_name_price .product_name:hover {
+  cursor: pointer;
+  color: red;
+}
+
 .product_details .product_name_price a {
   text-decoration: none;
   color: black;
