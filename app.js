@@ -1,8 +1,5 @@
 window.addEventListener("load", init);
 
-// Get language for page
-let page_language = localStorage.getItem("Language");
-
 var list_product_vie = [
   {
     product_name: "Gạo Nếp cái hoa vàng",
@@ -32,12 +29,12 @@ var list_product_vie = [
 
 let list_product_eng = [
   {
-    product_name: "Yellow flower sticky rice",
+    product_name: "Yellow Flower Sticky Rice",
     product_img: "../Images/Gao_nep_cai_hoa_vang.jpg",
   },
 
   {
-    product_name: "Medium grain Te rice",
+    product_name: "Medium Grain Te Rice",
     product_img: "../Images/Gao_te_hat_trung.jpg",
   },
 
@@ -79,6 +76,7 @@ let main_page_eng = {
   tuong_lan_introduce_container:
     "TUONG LAN ARGEX CO., LTD would like to sincerely thank you for your interest and always welcome you to our company.",
 };
+let h2 = `<h2 class="detailsButton">Chi Tiết</h2>`;
 
 if (page_language == "ENG") {
   console.log("True");
@@ -92,6 +90,8 @@ if (page_language == "ENG") {
 
   tuong_lan_introduce_container.innerText =
     main_page_eng.tuong_lan_introduce_container;
+
+  h2 = `<h2 class="detailsButton">Detail</h2>`;
 }
 
 function init() {
@@ -152,7 +152,7 @@ function init() {
     
     <!-- button_see_more_description -->
     <div onclick="getEle()" class="more_specific_product">
-      <h2 class="detailsButton">Chi Tiết</h2>
+      ${h2}
       <i
         style="margin-left: 10px"
         class="fa-solid fa-arrow-right"
@@ -182,7 +182,7 @@ function init() {
               </div>
               
               <div class="more_specific_see_more_product">
-              <h2>Xem thêm</h2>
+              ${h2}
               <i style="margin-left: 10px" class="fa-solid fa-arrow-right"></i>
               </div>
               </div>`;
