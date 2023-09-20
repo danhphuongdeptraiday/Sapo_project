@@ -66,7 +66,7 @@ let tuong_lan_introduce_container = document.querySelector(
 
 let main_page_eng = {
   banner_establish:
-    "Established in May 2006, Tuong Lan AGREX CO., LTD is proud to be one of the leading enterprises in the field of rice processing and exporting in Vietnam. As a longtime member of the Vietnam Food Association, in recent years, our products have conquered demanding markets such as The United States, Canada, European countries, Australia, Singapore, Taiwan, etc. and many other Asia-Pacific countries. Our goal is to become one of the leading suppliers of high quality rice from Vietnam. We are committed strictly to the origin, the quality of the products, and also the reasonable prices for customers around the world. Tuong Lan ARGEX CO., LTD would like to sincerely thank you for your attention and always welcome you to our company.",
+    "ESTABLISHED IN 2006, THE COMPANY IS THE PRIORITY CHOICE OF MANY FOREIGN IMPORTERS BESIDES RICE AND CEREALS PRODUCTS. QUALITY AND ORIGIN ARE THE BUSINESS FOUNDATIONS THAT WE HAVE BUILT, OPTIMIZED AND DEVELOPED TO BE ABLE TO PROVIDE CUSTOMERS WITH RELIABLE, HEALTHY PRODUCTS.",
 
   main_product_container_title: "OUR PRODUCTS",
   product_title: "Japonica rice",
