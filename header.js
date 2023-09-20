@@ -1,6 +1,8 @@
 // Get language for page
 let page_language = localStorage.getItem("Language");
 
+let vie_flag = document.querySelector(".vie");
+let eng_flag = document.querySelector(".england");
 let about_us_btn = document.querySelector(".about_us");
 let drop_down = document.querySelector(".drop_down");
 drop_down.style.display = "none";
@@ -55,4 +57,29 @@ if (page_language == "ENG") {
       menu_item[i].querySelector("div").innerText = header_eng.product;
     }
   }
+
+  vie_flag.style.display = "none";
+  eng_flag.style.display = "block";
 }
+
+console.log(vie_flag);
+
+vie_flag.addEventListener("click", function () {
+  vie_flag.style.display = "block";
+  if (vie_flag.style.display == "block") {
+    vie_flag.style.display = "none";
+    eng_flag.style.display = "block";
+    localStorage.setItem("Language", "ENG");
+    window.location.reload();
+  }
+});
+
+eng_flag.addEventListener("click", function () {
+  eng_flag.style.display = "block";
+  if (eng_flag.style.display == "block") {
+    vie_flag.style.display = "block";
+    eng_flag.style.display = "none";
+    localStorage.setItem("Language", "VIE");
+    window.location.reload();
+  }
+});
