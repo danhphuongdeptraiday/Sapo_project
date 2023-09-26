@@ -596,36 +596,6 @@
   color: white;
 }
 
-/*                      Certificate                     */
-.certificate_container {
-  max-width: 144rem;
-  margin: 0 auto;
-}
-
-table {
-  max-width: 1400px;
-  border: 2px solid green;
-  text-align: center;
-  color: green;
-  font-size: 18px;
-}
-
-tr {
-  border: 2px solid green;
-}
-
-th {
-  border: 2px solid green;
-  padding: 20px;
-  font-weight: bold;
-}
-
-td {
-  padding: 20px;
-
-  border: 2px solid green;
-}
-
 /*                    FOOTER                                */
 
 .footer {
