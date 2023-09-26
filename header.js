@@ -44,7 +44,7 @@ if (page_language == "ENG") {
     if (i == 0) {
       menu_item[i].querySelector("div").innerText = header_eng.main_page_item;
     } else if (i == 1) {
-      menu_item[i].querySelector("a").innerText = header_eng.about_us;
+      menu_item[i].querySelector("a div").innerText = header_eng.about_us;
       let list_drop_eng = menu_item[i].querySelectorAll(".drop_down div");
       for (let i = 0; i < list_drop_eng.length; i++) {
         list_drop_eng[i].innerText = header_eng.drop_down_list[i];

@@ -169,6 +169,7 @@ html {
   padding: 4rem;
   display: flex;
   align-items: flex-end;
+  background-color: white;
 }
 
 .line .heading .heading_number {

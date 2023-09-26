@@ -10,10 +10,24 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #aeb4a2;
+  position: relative;
+  height: 100%;
+
+  background-image: url("./Images/body_img.jpg");
+}
+
+section {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px -9px 10px -8px;
+}
+
 /* MENU */
 .menu_container {
   width: 100%;
   background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: fixed;
   z-index: 10;
   top: 0;
