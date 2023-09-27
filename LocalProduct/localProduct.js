@@ -189,7 +189,7 @@ function init() {
     <div class="product_details">
       <div class="product_name_price">
         <div onclick="moveToPage()" class="product_name">${list_product_in_LocalProduct_page[i].product_name}</div>
-        <div class="product_price">24.000 vnd</div>
+        <div class="product_price"></div>
       </div>
 
       <div class="product_add_to_card">

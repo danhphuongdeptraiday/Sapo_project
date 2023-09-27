@@ -25,6 +25,7 @@ drop_down.addEventListener("mouseout", function () {
 });
 
 let header_eng = {
+  brand_name: "TUONG LAN AGREX",
   main_page_item: "HOME PAGE",
   about_us: "ABOUT US",
   drop_down_list: [
@@ -40,6 +41,8 @@ let header_eng = {
 
 if (page_language == "ENG") {
   let menu_item = document.querySelectorAll(".item_container .item");
+  let brand_name = document.querySelector(".brand_name");
+  brand_name.innerText = header_eng.brand_name;
   for (let i = 0; i < menu_item.length; i++) {
     if (i == 0) {
       menu_item[i].querySelector("div").innerText = header_eng.main_page_item;

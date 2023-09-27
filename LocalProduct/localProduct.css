@@ -146,7 +146,7 @@ html {
 
 .search_container {
   max-width: 144rem;
-  min-height: 60rem;
+  min-height: 43rem;
   background-image: url("../Images/ruong_bac_thang.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,6 +167,7 @@ html {
   align-items: center;
   flex-direction: column;
   height: 26rem;
+  margin-top: 5rem;
 }
 
 .searching_part h1 {

@@ -63,6 +63,7 @@ let more_detail_btn = document.querySelector(".more_specific_product h2");
 let tuong_lan_introduce_container = document.querySelector(
   ".tuong_lan_introduce_container"
 );
+let product_title = document.querySelector(".product_title");
 
 let main_page_eng = {
   banner_establish:
@@ -79,7 +80,6 @@ let main_page_eng = {
 let h2 = `<h2 class="detailsButton">Chi Tiết</h2>`;
 
 if (page_language == "ENG") {
-  console.log("True");
   list_product_vie = list_product_eng;
 
   banner_establish.innerText = main_page_eng.banner_establish;
@@ -90,7 +90,7 @@ if (page_language == "ENG") {
 
   tuong_lan_introduce_container.innerText =
     main_page_eng.tuong_lan_introduce_container;
-
+  product_title.innerText = main_page_eng.product_title;
   h2 = `<h2 class="detailsButton">Detail</h2>`;
 }
 
