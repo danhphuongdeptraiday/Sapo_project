@@ -41,8 +41,8 @@ let header_eng = {
 
 if (page_language == "ENG") {
   let menu_item = document.querySelectorAll(".item_container .item");
-  let brand_name = document.querySelector(".brand_name");
-  brand_name.innerText = header_eng.brand_name;
+  // let brand_name = document.querySelector(".brand_name");
+  // brand_name.innerText = header_eng.brand_name;
   for (let i = 0; i < menu_item.length; i++) {
     if (i == 0) {
       menu_item[i].querySelector("div").innerText = header_eng.main_page_item;
@@ -53,11 +53,11 @@ if (page_language == "ENG") {
         list_drop_eng[i].innerText = header_eng.drop_down_list[i];
       }
     } else if (i == 2) {
-      menu_item[i].querySelector("div").innerText = header_eng.news;
-    } else if (i == 3) {
+      // menu_item[i].querySelector("div").innerText = header_eng.news;
       menu_item[i].querySelector("div").innerText = header_eng.process;
-    } else if (i == 4) {
+    } else if (i == 3) {
       menu_item[i].querySelector("div").innerText = header_eng.product;
+      // } else if (i == 4) {
     }
   }
 

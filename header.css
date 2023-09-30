@@ -30,6 +30,8 @@ section {
   position: fixed;
   z-index: 10;
   top: 0;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
 }
 
 .menu {
@@ -37,7 +39,7 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 130rem;
-  padding: 0rem 6rem 0rem 4rem;
+  padding: 0rem 6rem 0rem 5.5rem;
 
   margin: 0 auto;
 }
@@ -54,8 +56,8 @@ section {
 }
 
 .logo_container .logo_img {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   margin-right: 1.2rem;
 }
 
@@ -79,7 +81,7 @@ section {
 
 .item_container .item {
   display: flex;
-  padding: 1.8rem 1.5rem;
+  padding: 2.4rem 1.5rem;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -102,7 +104,7 @@ section {
   height: 20rem;
   background-color: white;
   position: absolute;
-  top: 5rem;
+  top: 6.2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
